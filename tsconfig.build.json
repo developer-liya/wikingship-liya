@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "ESNext",
+    "target": "ES5",
+    "declaration": true,
+    "jsx": "react",
+    "moduleResolution": "node", // 模块引入方式
+    "allowSyntheticDefaultImports": true
+  },
+  // 打包文件范围
+  "include": ["src"],
+  // 去除不打包文件
+  "exclude": ["src/**/*.test.tsx", "src/**/*.stories.tsx"]
+}
