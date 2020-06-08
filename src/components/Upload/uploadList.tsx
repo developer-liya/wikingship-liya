@@ -6,7 +6,7 @@ import Progress from "../Progress/progress";
 import Icon from "../Icon/icon";
 interface uploadListProps {
   fileList: UploadFile[];
-  onRemove?: (file: UploadFile) => void;
+  onRemove: (_file: UploadFile) => void;
 }
 
 export const UploadList: FC<uploadListProps> = (props) => {

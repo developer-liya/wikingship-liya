@@ -57,7 +57,7 @@ const SimpleComplete = () => {
   // const handleFetch = (query: string) => {
   //   return lakersWithNumber.filter((player) => player.value.includes(query));
   // };
-  // 自定义渲染函数
+  // 自定义渲染函数;
   // const renderOption = (item: DataSourceType<LakerPlayerProps>) => {
   //   return (
   //     <>
@@ -65,20 +65,20 @@ const SimpleComplete = () => {
   //     </>
   //   );
   // };
-  const renderOption = (item: DataSourceType<GithubUserProps>) => {
-    const itemWithGithub = item;
-    return (
-      <>
-        <h2>{itemWithGithub.value}</h2>
-      </>
-    );
-  };
+  // const renderOption = (item: DataSourceType<GithubUserProps>) => {
+  //   const itemWithGithub = item;
+  //   return (
+  //     <>
+  //       <h2>{itemWithGithub.value}</h2>
+  //     </>
+  //   );
+  // };
 
   return (
     <AutoComplete
       onSelect={action("selected")}
       fetchSuggestions={handleFetch}
-      renderOption={renderOption}
+      // renderOption={renderOption}
     />
   );
 };
